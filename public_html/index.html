@@ -54,25 +54,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="top-menu">
 			 <span class="menu"></span>
 				 <ul>
-				 <li class="active"><a href="index.html">Home</a></li>
-				 <li><a class="scroll" href="#Cusinies">Cuisines</a></li>
-				 <li><a class="scroll" href="#about">About</a></li>				 
-				 <li><a class="scroll" href="#Gallery">Gallery</a></li>
-				 <li><a class="scroll" href="#contact">Contact</a></li>			 
+				 <li class="active"><a href="#about">Our Story</a></li>
+				 <!-- <li><a class="scroll" href="#Cusinies">Menu</a></li> -->			 
+				 <li><a class="scroll" href="#Gallery">Menu</a></li>
+				 <li><a class="scroll" href="#contact">Location and Hours</a></li>			 
 				 </ul>
 			 </div>
-			  <!-- script-for-menu -->
-		 <script>
+			 <!-- script-for-menu -->
+                         <script>
 				$("span.menu").click(function(){
 					$(".top-menu ul").slideToggle("slow" , function(){
 					});
 				});
-		 </script>
-		 <!-- script-for-menu -->	  	
+                         </script>
+                         <!-- script-for-menu -->	  	
 
 			 <div class="clearfix"></div>
 		 </div>
-		 <div class="banner-info">
+		 <!-- <div class="banner-info">
 			<h1>Exquisite Spicecs and Seasonings.</h1>
 			 <div class="col-md-6 banner-text wow fadeInRight" data-wow-delay="0.5s">				 	
 					 <img src="images/gg.jpg" alt=""/>
@@ -90,7 +89,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </form>
 			 </div>
 			 <div class="clearfix"></div>
-		 </div>
+		 </div> -->
+                 
+                <!-- Landing page slideshow -->
+                <!-- bxSlider Javascript file -->
+                <script src="js/jquery.bxslider.min.js"></script>
+                <!-- bxSlider CSS file -->
+                <link href="css/jquery.bxslider.css" rel="stylesheet" type='text/css' property=""/>
+                               
+                <script type="text/javascript">
+		$(document).ready(function() {
+                    $('.bxslider').bxSlider();
+                });
+                </script>
+                
+                <div class="banner-info">
+                    <div class="col-md-10 banner-text wow fadeInRight" data-wow-delay="0.5s">
+                        <ul class="bxslider">
+                            <li><img src="images/slider_img1.jpg" /></li>
+                            <li><img src="images/slider_img2.jpg" /></li>
+                            <li><img src="images/slider_img3.jpg" /></li>
+                         </ul>
+                    </div>
+                </div>
+                <!-- Landing page slideshow END -->
 	 </div>
 </div>
 <!---->

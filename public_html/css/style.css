@@ -29,8 +29,10 @@ padding:0;
 }
 /*----*/
 .banner{
-background:url(../images/bg.jpg) no-repeat 0px 0px;
-min-height:750px;
+/* background:url(../images/bg.jpg) no-repeat 0px 0px; */
+background:#2F3238;
+color:#7F8289;
+min-height:800px;
 background-size:cover;
 }
 .header{

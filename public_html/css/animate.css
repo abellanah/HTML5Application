@@ -3295,3 +3295,21 @@ Copyright (c) 2013 Daniel Eden
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+	#home-slider {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 480px) {
+	#home-slider {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	
+	#home-slider ul#slide-list {
+		display: none;	
+	}
+}
