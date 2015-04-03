@@ -575,23 +575,27 @@ width: 100%;
   text-transform:uppercase;
 }
 /*----*/
-.contact{
+.location{
 padding:3% 0 0 0;
-background:#ededed;
+background:#15141a;
 position:relative;
 }
-.contact-text{
+.location-text{
 text-align:center;
 }
-.contact-text h3{
+.location-text h3{
 font-size: 2.7em;
 font-weight: 600;
 color:#ff912f;
 padding-bottom: 0.5em;
 background: url(../images/line.png) no-repeat 50% 100%;
 }
-.contact-grids{
+.location-grids{
 margin:5% 0;
+}
+
+.location-padding {
+padding-bottom: 50px;
 }
 .icon1{
 background: url(../images/icons1.png) no-repeat -46px -14px;
@@ -599,7 +603,6 @@ width: 28px;
 height: 35px;
 display:inline-block;
 text-align:center;
-margin-bottom:1em
 }
 .icon2{
 background: url(../images/icons1.png) no-repeat -96px -14px;
@@ -607,7 +610,6 @@ width: 28px;
 height: 35px;
 display:inline-block;
 text-align:center;
-margin-bottom:1em
 }
 .icon3{
 background: url(../images/icons1.png) no-repeat -145px -14px;
@@ -617,22 +619,23 @@ display:inline-block;
 text-align:center;
 margin-bottom:1em
 }
-.contact-grid p{
+.location-grids p{
 color:#999999;
 font-weight:500;
 font-size:1.25em;
 }
-.contact-grid a{
+.location-grids a{
 color:#999999;
 font-weight:500;
 display:block;
 text-decoration:none;
 font-size:1.25em;
+margin-bottom:1em
 }
-.contact-grid a:hover{
+.location-grid a:hover{
 color:#008ed6;
 }
-.contact-details{
+.location-details{
 background:#15141a;
 padding:4em 4em 2em 4em;
 width: 49%;
@@ -641,7 +644,7 @@ bottom: 0%;
 left: 26%;
 text-align:center;
 }
-.contact-details form input[type="text"],.contact-details form textarea {
+.location-details form input[type="text"],.location-details form textarea {
 width: 100%;
 padding: 10px 14px;
 border: 1px solid #444348;
@@ -652,15 +655,15 @@ outline: none;
 background:transparent;
 font-weight: 700;
 }
-.contact-details form textarea {
+.location-details form textarea {
 height: 168px;
 resize: none;
 width: 100%;
 }
-.contact-right{
+.location-right{
 text-align:right;
 }
-.contact-details input[type="submit"] {
+.location-details input[type="submit"] {
   background: #ff912f;
   color: #fff;
   font-size: 1.2em;
@@ -681,14 +684,16 @@ text-align:right;
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
 }
-.contact-details input[type="submit"]:hover{
+.location-details input[type="submit"]:hover{
 background:transparent;
 border: 1px solid #ff912f;
 }
+/*--
 .map iframe{
 height:500px;
 width:100%;
 }
+--*/
 /*--footer--*/
 .footer{
 background:#15141a;
@@ -786,7 +791,7 @@ margin-top: 3em;
   background-size: 100%;
   width: 66%;
 }
-.contact-details {
+.location-details {
 width: 55%;
 left: 23%;
 }
@@ -816,7 +821,7 @@ padding: 12px 2em;
   margin-top: 13px;
 }
 .features-head h3,.device-text h3,.device-text-bottom h3,.pricing-text h3,.pricing-text-bottom h3
-,.contact-text h3{
+,.location-text h3{
 font-size: 2.5em;
 padding-bottom: 0.5em;
 }
@@ -869,7 +874,7 @@ width: 94%;
 .pricing-bottom {
 padding: 3% 0 5% 0;
 }
-.contact-details {
+.location-details {
 width: 71%;
 left: 15%;
 padding: 3em;
@@ -907,7 +912,7 @@ padding: 9px 1.2em;
 .banner-form p {
 display:none;
 }
-.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3, .pricing-text-bottom h3, .contact-text h3 {
+.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3, .pricing-text-bottom h3, .location-text h3 {
 font-size: 2em;
 padding-bottom: 0.7em;
 }
@@ -988,32 +993,32 @@ min-height: 420px;
 ul.callbacks_tabs.callbacks1_tabs {
 bottom: -45%;
 }
-.contact-grid {
+.location-grid {
 width: 33.3%;
 float: left;
 }
-.contact-grid p,.contact-grid a{
+.location-grid p,.location-grid a{
 font-size: 1.1em;
 }
-.contact-details {
+.location-details {
 width: 60%;
 left: 21%;
 padding: 3em;
 bottom:20%;
 }
-.contact-details form input[type="text"], .contact-details form textarea {
+.location-details form input[type="text"], .location-details form textarea {
 padding: 7px 14px;
 font-size: 1em;
 margin-bottom: 1em;
 }
-.contact-details form textarea {
+.location-details form textarea {
 height: 116px;
 }
-.contact-details input[type="submit"] {
+.location-details input[type="submit"] {
 padding: 11px 1.7em;
 font-size: 0.85em;
 }
-.contact-grids {
+.location-grids {
   margin: 5% 0px 26% 0;
 }
 }
@@ -1049,7 +1054,7 @@ width: 47%;
 font-size: 0.85em;
 padding: 8px 1em;
 }
-.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3, .pricing-text-bottom h3, .contact-text h3 {
+.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3, .pricing-text-bottom h3, .location-text h3 {
 font-size: 2em;
 }
 .feature-grid h3 {
@@ -1129,24 +1134,24 @@ font-size: 0.4em;
 padding: 11px 2em;
 font-size: 0.9em;
 }
-.contact-grid p, .contact-grid a {
+.location-grid p, .location-grid a {
 font-size: 1em;
 }
-.contact-details form input[type="text"], .contact-details form textarea {
+.location-details form input[type="text"], .location-details form textarea {
 font-size: 0.9em;
 }
-.contact-details {
+.location-details {
 width: 100%;
 padding: 2em;
 position:inherit;
 }
-.contact-grids {
+.location-grids {
   margin: 5% 0px 5% 0;
 }
-.contact-details form textarea {
+.location-details form textarea {
 height: 103px;
 }
-.contact-details input[type="submit"] {
+.location-details input[type="submit"] {
 padding: 10px 1.7em;
 font-size: 0.8em;
 }
@@ -1240,7 +1245,7 @@ min-height: 335px;
 .feature-grid {
   margin-bottom: 1.5em;
 }
-.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3, .pricing-text-bottom h3, .contact-text h3 {
+.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3, .pricing-text-bottom h3, .location-text h3 {
 font-size: 1.8em;
 }
 .features-section {
@@ -1316,24 +1321,24 @@ padding: 2em 0;
 padding: 9px 2em;
 font-size: 0.85em;
 }
-.pricing-bottom,.contact {
+.pricing-bottom,.location {
 padding: 5% 0 5% 0;
 }
 .features{
 padding:5% 0;
 }
-.contact-grid {
+.location-grid {
 padding: 0;
 width:100%;
 margin-bottom:1em;
 }
-.contact-details {
+.location-details {
 padding: 1.5em;
 }
-.contact-details form textarea {
+.location-details form textarea {
 height: 87px;
 }
-.contact-left,.contact-right{
+.location-left,.location-right{
 padding:0;
 }
 .footer p {
@@ -1389,7 +1394,7 @@ width: 100%;
 .about-device {
 width: 100%;
 }
-.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3,.gallery-head h3, .contact-text h3 {
+.features-head h3, .device-text h3, .device-text-bottom h3, .pricing-text h3,.gallery-head h3, .location-text h3 {
 font-size: 1.4em;
 }
 .device-text p {
@@ -1408,7 +1413,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 bottom: -5%;
 left: 28%;
 }
-.contact-grid.text-center {
+.location-grid.text-center {
 width: 100%;
 float: none;
 margin-bottom:1em;
@@ -1416,7 +1421,7 @@ margin-bottom:1em;
 .icon1,.icon2,.icon3 {
 margin-bottom: 0.5em;
 }
-.contact-details {
+.location-details {
 width: 100%;
 left: 10%;
 padding: 1.5em;
