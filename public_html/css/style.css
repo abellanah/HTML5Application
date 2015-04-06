@@ -688,12 +688,22 @@ text-align:right;
 background:transparent;
 border: 1px solid #ff912f;
 }
-/*--
-.map iframe{
-height:500px;
-width:100%;
+
+/*--table--*/
+table {
+    width:100%;
 }
---*/
+table, th, td {
+	background: rgba(52, 27, 43, 0.5);
+    border-collapse: collapse;
+	
+}
+th, td {
+    padding: 5px;
+	color: white;
+    text-align: left;
+}
+
 /*--footer--*/
 .footer{
 background:#15141a;
@@ -778,6 +788,43 @@ color: #fff;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
 }
+/*--customized--*/
+
+.megatron {
+	background: url("../images/bg.jpg") no-repeat 0px 0px;
+	background-color: black;
+	background-size:cover;
+	min-height:640px;
+}
+
+.panel1{
+	background: rgba(52, 27, 43, 0.5);
+	margin-left: auto;
+    margin-right: auto;
+	width: 40%;
+	display: block;
+	text-align:center;
+}
+		
+div.padding1 {
+	padding-top: 25px;
+	padding-left: 1000px;
+	padding-bottom: 10px;
+}
+
+div.padding2 {
+	padding-top: 10px;
+	padding-left: 240px;
+}
+
+div.padding3 {
+	padding-top: 80px;
+}
+
+div.padding4{
+	padding-top: 10px;
+	float: right;
+}
 /*--responsive--*/
 @media (max-width: 1280px){
 .banner-info {
@@ -809,6 +856,7 @@ width: 58%;
 .banner {
 min-height:680px;
 }
+
 .banner-form {
   padding: 1.2em;
 }
