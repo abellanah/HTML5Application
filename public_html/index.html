@@ -1,18 +1,16 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
 <title>Java Point Cafe</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.0.min.js"></script>
 
-                
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
+<!-- jQuery (Bootstrap's JavaScript plugins) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- angularjs -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -25,6 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:800">
 
 <!---- start-smoth-scrolling---->
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -49,118 +48,60 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>
-<!---->
+    
+<!-- Home -->
 <div class="banner">
-	 <div class="container">
-		 <div class="header">
-			 <div class="logo wow fadeInLeft" data-wow-delay="0.5s">
-			 <a href="index.html"><img src="images/logo2.png" alt=""/></a>
-			 </div>
-			 <div class="top-menu">
-			 <span class="menu"></span>
-				 <ul>
-				 <li class="active"><a href="#about">Our Story</a></li>
-				 <!-- <li><a class="scroll" href="#Cusinies">Menu</a></li> -->			 
-				 <li><a class="scroll" href="#Gallery">Menu</a></li>
-				 <li><a class="active" href="checkout.html">Ordered Items</a></li>
-				 <li><a class="scroll" href="#location">Location and Hours</a></li>			 
-				 </ul>
-			 </div>
-			 <!-- script-for-menu -->
-                         <script>
-				$("span.menu").click(function(){
-					$(".top-menu ul").slideToggle("slow" , function(){
-					});
-				});
-                         </script>
-                         <!-- script-for-menu -->	  	
-
-			 <div class="clearfix"></div>
-		 </div>
-		 <!-- <div class="banner-info">
-			<h1>Exquisite Spicecs and Seasonings.</h1>
-			 <div class="col-md-6 banner-text wow fadeInRight" data-wow-delay="0.5s">				 	
-					 <img src="images/gg.jpg" alt=""/>
-				 <a class="download hvr-shutter-out-horizontal" href="#">ORDER NOW</a>				 
-			 </div>
-			 <div class="col-md-6 banner-form wow fadeInLeft" data-wow-delay="0.5s">
-				 <form>
-					 <h3>Get in touch</h3>
-					 <p>Please complete the form</p>
-					  <input type="text" placeholder="Name *" required/>
-					  <input type="text" placeholder="E-mail *" required/>
-					  <input type="text" placeholder="Phone *" required/>
-					  <textarea placeholder="Message *"></textarea>
-					  <input type="submit" value="SEND MESSAGE"/>
-				 </form>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div> -->
-                 
-                <!-- Landing page slideshow -->
-                <!-- bxSlider Javascript file -->
-                <script src="js/jquery.bxslider.min.js"></script>
-                <!-- bxSlider CSS file -->
-                <link href="css/jquery.bxslider.css" rel="stylesheet" type='text/css' property=""/>
-                               
-                <script type="text/javascript">
-		$(document).ready(function() {
-                    $('.bxslider').bxSlider();
-                });
-                </script>
+    <div class="container">
+        <div class="header">
+            <div class="logo wow fadeInLeft col-md-12 text-center" data-wow-delay="0.5s">
+		<a href="index.html"><img src="images/logo.png" alt=""/></a>
+            </div>
+            <div class="top-menu col-md-12 text-center" style="font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 800;">
+                <span class="menu"></span>
+                    <ul>
+                        <li class="active"><a href="#about">OUR STORY</a></li>
+                        <li><a class="scroll" href="#Gallery">MENU</a></li>
+			<li><a class="scroll" href="#location">LOCATION AND HOURS</a></li>	
+                        <li><a class="scroll" href="#location">YOUR ORDER</a></li>
+                    </ul>
+            </div>
+            <!-- script-for-menu -->
+            <script>
+                $("span.menu").click(function(){
+                    $(".top-menu ul").slideToggle("slow" , function(){
+                    });
+		});
+            </script>
+            <!-- script-for-menu -->	  	       
+	</div>
+        <span> </span>  
+        <span> </span> 
+        
+        <!-- Landing page slideshow -->
+        <!-- bxSlider Javascript file -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type='text/css' property=""/>                     
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.bxslider').bxSlider({mode: 'fade', captions: true, auto:true});
+            });
+        </script>
                 
-                <div class="banner-info">
-                    <div class="col-md-10 banner-text wow fadeInRight" data-wow-delay="0.5s">
-                        <ul class="bxslider">
-                            <li><img src="images/slider_img1.jpg" /></li>
-                            <li><img src="images/slider_img2.jpg" /></li>
-                            <li><img src="images/slider_img3.jpg" /></li>
-                         </ul>
-                    </div>
-                </div>
-                <!-- Landing page slideshow END -->
-	 </div>
-</div>
-<!--
-<div id="Cusinies" class="features">
-	 <div class="container">
-		 <div class="features-head">			
-			 <h3>Our Quality Cuisines</h3>
-			 <span></span>
-		 </div>
-		 <div class="features-section">
-			 <div class="col-md-6 feature-grid">
-				 <img class="wow bounceIn" data-wow-delay="0.4s" src="images/r1.jpg" alt=""/>
-				 <h3>Mixed Veg Dish</h3>
-				 <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
-				 Cras tincidunt semper dui suscipit auctor. Maecenas bibendum risus eget orci condimentum, in lobortis augue luctus. Aenean mauris ex, commodo luctus erat id, fringilla iaculis elit.</p>
-			 </div>
-			 <div class="col-md-6 feature-grid">
-				 <img class="wow bounceIn" data-wow-delay="0.4s" src="images/r2.jpg" alt=""/>
-				 <h3>Mexician Recipes</h3>
-				 <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
-				 Cras tincidunt semper dui suscipit auctor. Maecenas bibendum risus eget orci condimentum, in lobortis augue luctus. Aenean mauris ex, commodo luctus erat id, fringilla iaculis elit.</p>
-			 </div>
-			 <div class="clearfix">
-			 <div class="col-md-6 feature-grid">
-				 <img class="wow bounceIn" data-wow-delay="0.4s" src="images/r3.jpg" alt=""/>
-				 <h3>Chicken Dishes</h3>
-				 <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
-				 Cras tincidunt semper dui suscipit auctor. Maecenas bibendum risus eget orci condimentum, in lobortis augue luctus. Aenean mauris ex, commodo luctus erat id, fringilla iaculis elit.</p>
-			 </div>
-			 <div class="col-md-6 feature-grid">
-				 <img class="wow bounceIn" data-wow-delay="0.4s" src="images/r4.jpg" alt=""/>
-				 <h3>Kimchi Fried Rice</h3>
-				 <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
-				 Cras tincidunt semper dui suscipit auctor. Maecenas bibendum risus eget orci condimentum, in lobortis augue luctus. Aenean mauris ex, commodo luctus erat id, fringilla iaculis elit.</p>
-			 </div>
-			 <div class="clearfix"></div>
-                        </div>
-	 </div>
+        <div class="banner-info">
+            <div class="col-md-10">
+                <ul class="bxslider">
+                    <li><img src="images/s1.jpg" title='BREAKFAST BURRITO'/></li>
+                    <li><img src="images/s2.jpg" title='CHICKEN QUESADILLA'/></li>
+                    <li><img src="images/s3.jpg" title='CLASSIC EGGS BENEDICT'/></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Landing page slideshow END -->
+    </div>
 </div>
 
-</div>
--->
+<!-- Our Story -->
 <div id="about" class="content">
 	 <div class="container">
 		<div class="gallery-head">
@@ -169,17 +110,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 </div>
 			 <div class="col-md-6 about-device-info wow fadeInRight" data-wow-delay="0.5s">
 				 <div class="device-text">					 
-					 <h3>OUR STORY</h3>
-					 <span></span>	
+					 <h3 style="font-family: 'Open Sans', sans-serif;">OUR STORY</h3>
+					 
 					 <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
 					 Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
 				 </div>
 				 <div class="about-list">
 					 <ul>
-						 <li><a href="#"><span class="abt1"></span>Etiam aliquam velit eu facilisis porttitor.</a></li>
-						 <li><a href="#"><span class="abt2"></span>Aliquam mollis ligula ac erat luctus ornare</a></li>
-						 <li><a href="#"><span class="abt3"></span>Quisque vel lorem eget orci volutpat mattis.</a></li>
-						 <li><a href="#"><span class="abt4"></span>Donec vel velit id arcu vulputate efficitur</a></li>
+						 <li><a href="#">Etiam aliquam velit eu facilisis porttitor.</a></li>
+						 <li><a href="#">Aliquam mollis ligula ac erat luctus ornare</a></li>
+						 <li><a href="#">Quisque vel lorem eget orci volutpat mattis.</a></li>
+						 <li><a href="#">Donec vel velit id arcu vulputate efficitur</a></li>
 					 </ul>
 				 </div>
 			 </div>
@@ -188,153 +129,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 </div>
 </div>
 
-<!--
-  <script src="js/responsiveslides.min.js"></script>
-  <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      $("#slider2").responsiveSlides({
-        auto: true,
-        pager: true,
-        speed: 300,
-        namespace: "callbacks",
-      });
-    });
-  </script>
-
-<div class="pricing">
-	 <div class="container">
-		 <div class="pricing-text">			
-			<h3>Our Customer Reviews</h3>
-			<span></span>	
-		 </div>
-		 
-		 <div class="pricing-grids">
-			 <div class="slider">
-				 <ul class="rslides" id="slider2">
-					 <li>						 
-					     <div class="col-md-6 pricing-plans">
-							  <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
-							 “When we come to you,” said they to the Sea.</p>
-							  <div class="pic1">
-								 <img src="images/pr1.png" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>
-						 <div class="col-md-6 pricing-plans">
-							  <p>A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</p>
-							  <div class="pic1">
-								 <img src="images/pr2.png" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>
-                                             
-					      <div class="clearfix"></div>						  
-					  </li>	
-					  <li>						    
-						 <div class="col-md-6 pricing-plans">
-							  <p>A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</p>
-							  <div class="pic1">
-								 <img src="images/pr2.png" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>	
-						  <div class="col-md-6 pricing-plans">
-							  <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
-							 “When we come to you,” said they to the Sea.</p>
-							  <div class="pic1">
-								 <img src="images/m2.jpg" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>
-					      <div class="clearfix"></div>						  
-					  </li>
-					  <li>						 
-					     <div class="col-md-6 pricing-plans">
-							  <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
-							 “When we come to you,” said they to the Sea.</p>
-							  <div class="pic1">
-								 <img src="images/m1.jpg" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>
-						 <div class="col-md-6 pricing-plans">
-							  <p>A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</p>
-							  <div class="pic1">
-								 <img src="images/pr1.png" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>						
-					      <div class="clearfix"></div>						  
-					  </li>	
-					  <li>						    
-						 <div class="col-md-6 pricing-plans">
-							  <p>A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move is quite dictated by your shoes.</p>
-							  <div class="pic1">
-								 <img src="images/pr2.png" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>	
-						  <div class="col-md-6 pricing-plans">
-							  <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
-							 “When we come to you,” said they to the Sea.</p>
-							  <div class="pic1">
-								 <img src="images/m2.jpg" alt=""/>
-							  </div>
-							  <div class="pic-info">
-									<h5>John Doe</h5>
-									<a href="#">CEO, THE RIVERS COMPANY</a>
-							  </div>
-							  <div class="clearfix"></div>
-						 </div>
-					      <div class="clearfix"></div>						  
-					  </li>
-				  </ul>
-			   </div>
-			   
-		  </div>  	
-	 </div>
-</div>
--->
-<!---->
-
-<!--<script src="js/lightbox.min.js"></script>
-<link href="css/lightbox.css" rel="stylesheet" />-->
-<!--<script type="text/javascript" src="js/jquery.lightbox.js"></script>
-<link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen" /> 
-		<script type="text/javascript">
-			$(function() {
-				$('.gallery a').lightBox();
-			});
-</script>-->
 <link rel="stylesheet" href="css/colorbox.css">
 <script src="js/jquery.colorbox-min.js"></script>
 <script>
@@ -344,24 +138,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </script>
 
 
-
+<!-- Gallery -->
 <div id="Gallery" class="content">
     <div class="container">
-        <div class="gallery-head" style="float: right">
-            <a href="#"><img src="images/cart.png"/></a>
-        </div>
         <div class="gallery-head">
-            <h3>OUR MENU</h3>
+            <h3 style="font-family: 'Open Sans', sans-serif;">OUR MENU</h3>
         </div>
 <!-- Side menu start -->
         <div class="col-md-3 gallery-top">
             <link rel="stylesheet" href="css/styles.css">
             <script src="js/script.js"></script>
 
-            <div id='cssmenu'>
+            <div id='cssmenu' style="font-family: 'Open Sans', sans-serif">
                 <ul>
-                    <li><a href='#Gallery'><span>Full Menu</span></a></li>
-                    <li class='active has-sub'><a href='#'><span>Brunch</span></a>
+                    <li class='active'><a href='#Gallery'><span>Full Menu</span></a></li>
+                    <li class='has-sub'><a href='#'><span>Brunch</span></a>
                         <ul>
                             <li><a href='#'><span>Omelettes</span></a>
                             <li><a href='#'><span>Waffles</span></a>
@@ -378,54 +169,135 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
 <!-- Side menu end -->
         <div class="col-md-9 gallery-top">
-            <div class="gallery">
+            <div class="gallery" style="font-family: 'Open Sans', sans-serif">
                 <ul>
                     <li class="wow bounceIn" data-wow-delay="0.5s">
-                        <a href="#about"><img src="images/r11.jpg" alt=""/></a>
-			<h3>Indian Recipes</h3>
+                        <div style="clear: both">
+                            <h3 style="float:left">Breakfast Burrito</h3>
+                            <h3 style="float:right">$5.05</h3>
+                        </div>
+                        <a class='gallery2' href="images/g5.jpg"><img src="images/g5.jpg" alt=""/></a> 
+                        <div class="row">
+                            <div style="clear: both; padding-top:0.5em; padding-bottom:2em">
+                                <div class="col-lg-6 text-center" style="float:right">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="1" value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="wow bounceIn" data-wow-delay="0.5s">
-			<a href="images/r22.jpg"><img src="images/r22.jpg"/></a>
-			<h3>Mexican Roti</h3>
+                        <div style="clear: both">
+                            <h3 style="float:left">VEGETARIAN BENEDICT</h3>
+                            <h3 style="float:right">$5.05</h3>
+                        </div>
+                        <a class='gallery2' href="images/g1.jpg"><img src="images/g1.jpg" alt=""/></a> 
+                        <div class="row">
+                            <div style="clear: both; padding-top:0.5em; padding-bottom:2em">
+                                <div class="col-lg-6 text-center" style="float:right">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="1" value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="wow bounceIn" data-wow-delay="0.5s">
-			<a href="images/r33.jpg"><img src="images/r33.jpg"/></a>
-			<h3>Japanese Rolls</h3>
+                     <li class="wow bounceIn" data-wow-delay="0.5s">
+                        <div style="clear: both">
+                            <h3 style="float:left">CLASSIC EGG BENEDICT</h3>
+                            <h3 style="float:right">$5.05</h3>
+                        </div>
+                        <a class='gallery2' href="images/g2.jpg"><img src="images/g2.jpg" alt=""/></a> 
+                        <div class="row">
+                            <div style="clear: both; padding-top:0.5em; padding-bottom:2em">
+                                <div class="col-lg-6 text-center" style="float:right">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="1" value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="last wow bounceIn" data-wow-delay="0.5s">
-                        <a href="images/r44.jpg"><img src="images/r44.jpg"/></a>
-			<h3>Chicken Recipes</h3>
-                    </li>				 
-                    <li class="wow bounceIn" data-wow-delay="0.5s">
-			<a href="images/r55.jpg"><img src="images/r55.jpg"/></a>
-			<h3>Mix Salad</h3>
+                     <li class="wow bounceIn" data-wow-delay="0.5s">
+                        <div style="clear: both">
+                            <h3 style="float:left">HUEVOS RANCHEROS</h3>
+                            <h3 style="float:right">$5.05</h3>
+                        </div>
+                        <a class='gallery2' href="images/g3.jpg"><img src="images/g3.jpg" alt=""/></a> 
+                        <div class="row">
+                            <div style="clear: both; padding-top:0.5em; padding-bottom:2em">
+                                <div class="col-lg-6 text-center" style="float:right">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="1" value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="wow bounceIn" data-wow-delay="0.5s">
-			<a href="images/r66.jpg"><img src="images/r66.jpg"/></a>
-			<h3>Vegiterian</h3>
+                     <li class="wow bounceIn" data-wow-delay="0.5s">
+                        <div style="clear: both">
+                            <h3 style="float:left">CHICKEN QUESADILLA</h3>
+                            <h3 style="float:right">$5.05</h3>
+                        </div>
+                        <a class='gallery2' href="images/g4.jpg"><img src="images/g4.jpg" alt=""/></a> 
+                        <div class="row">
+                            <div style="clear: both; padding-top:0.5em; padding-bottom:2em">
+                                <div class="col-lg-6 text-center" style="float:right">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="1" value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="wow bounceIn" data-wow-delay="0.5s">
-			<a href="images/r77.jpg"><img src="images/r77.jpg"/></a>
-			<h3>Spicy Pizza</h3>
-                    </li>
-                    <li class="last wow bounceIn" data-wow-delay="0.5s">
-                        <a class='gallery2' href="images/r11.jpg"><img src="images/r11.jpg"/></a>
-			<h3>Indian Recipes</h3>
-                    </li>					
+                     <li class="wow bounceIn" data-wow-delay="0.5s">
+                        <div style="clear: both">
+                            <h3 style="float:left">BERRY PANCAKE</h3>
+                            <h3 style="float:right">$5.05</h3>
+                        </div>
+                        <a class='gallery2' href="images/g6.jpg"><img src="images/g6.jpg" alt=""/></a> 
+                        <div class="row">
+                            <div style="clear: both; padding-top:0.5em; padding-bottom:2em">
+                                <div class="col-lg-6 text-center" style="float:right">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="1" value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Add To Cart</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                    
+                    
 		</ul>
                 <div class="clearfix"></div>
             </div>
         </div>
     </div>
-</div>
-<!---//End-banner---->
-        
+</div>      
 
-<!---->
+<!-- Location -->
 <div id="location" class="location">
 	 <div class="container">
 		 <div class="location-text">			
-			<h3>Location & Hours</h3>
+			<h3 style="font-family: 'Open Sans', sans-serif;">LOCATION & HOURS</h3>
 			<span></span>	
 		 </div>
 		 <div class="location-grids">
@@ -436,8 +308,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div>
 				 <p><b>OUR LOCATION:</b></p>
 				 <p>366 1st St, Benicia, CA 94510, United States</p>
+                                 <wbr>
 				 <div class="icon2"></div>
-				 <a href="https://www.google.com.ph/maps/place/Java+Point+Cafe/@38.046982,-122.160356,15z/data=!4m2!3m1!1s0x0:0x39b90bd488b76c29?sa=X&ei=1koZVZuKMoWg8QWi9IBo&ved=0CHQQ_BIwCw" style="color:blue">Directions</a>
+				 <a href="https://www.google.com.ph/maps/place/Java+Point+Cafe/@38.046982,-122.160356,15z/data=!4m2!3m1!1s0x0:0x39b90bd488b76c29?sa=X&ei=1koZVZuKMoWg8QWi9IBo&ved=0CHQQ_BIwCw" class="location-padding" style="color:light blue">Directions</a>
 				 </div>
 				 <div>
 				 <p><b>OPEN HOURS:</b></p>
@@ -454,7 +327,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 <a>
 			   <img src="images/jpcmapimage.jpg" alt="map" style="width:360px;height:420px;border:0">
 			 </a>
+                             
 			 </div>
+                     <a class="wow bounceIn col-md-12 text-center "data-wow-delay="0.5s" href="index.html"><img src="images/logo.png" alt=""/></a>
 			 <div class="clearfix"></div>
 		 </div>
 	 </div>	 
@@ -463,8 +338,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!---->
 <div class="footer text-center">
 	 <div class="container">		
-		 <a class="wow bounceIn" data-wow-delay="0.5s" href="index.html"><img src="images/logo2.png" alt=""/></a>		 
-		 <p class="wow bounceIn" data-wow-delay="0.4s">Copyright &copy; 2015 Spicy Cuisine All rights reserved | Design by  <a href="http://w3layouts.com">  W3layouts</a></p>
+		 		 
+		 <p class="wow bounceIn" data-wow-delay="0.4s">Copyright &copy; 2015 Java Point Cafe. All rights reserved.</p>
 		 <div class="social">			 
 			 <a href="#"><span class="behance"></span></a>
 			 <a href="#"><span class="dribble"></span></a>
@@ -488,7 +363,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 });
 </script>
-<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
 <!---->
 
  </body>

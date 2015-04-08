@@ -34,8 +34,8 @@
 .bx-wrapper .bx-viewport {
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
+	/**box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;*/
 	left: -5px;
 	background: #fff;
 	
@@ -111,16 +111,16 @@
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
-	background: url(images/controls.png) no-repeat -45px -32px;
+	right: 20px;
+	background: url(images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+	background-position: 0 -32px;
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -45px 0;
+	background-position: -43px -32px;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -189,8 +189,8 @@
 /* IMAGE CAPTIONS */
 
 .bx-wrapper .bx-caption {
-	position: absolute;
-	bottom: 0;
+	position:  absolute;
+	bottom: 0.5px;
 	left: 0;
 	background: #666\9;
 	background: rgba(80, 80, 80, 0.75);
@@ -199,8 +199,9 @@
 
 .bx-wrapper .bx-caption span {
 	color: #fff;
-	font-family: Arial;
+	font-family: Open Sans;
 	display: block;
-	font-size: .85em;
-	padding: 10px;
+	font-size: 1em;
+        font-weight:bold;
+	padding: 15px;
 }

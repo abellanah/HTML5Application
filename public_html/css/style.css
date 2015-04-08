@@ -26,6 +26,7 @@ p{
 ul{
 margin:0;
 padding:0;
+padding-bottom: 25px;
 }
 /*----*/
 .banner{
@@ -40,6 +41,7 @@ padding:2em 0;
 }
 .logo{
 float:left;
+padding-bottom:0.5em;
 }
 .logo a{
 display:inline-block;
@@ -59,7 +61,7 @@ text-decoration:none;
 margin:0 0.5em;
 }
 .top-menu ul li a:hover{
-color:#ff912f;
+color:#a64c4c;
 }
 .banner-info{
 margin-top:5%;
@@ -254,7 +256,7 @@ text-align:left;
 .device-text h3{
 font-size: 2.7em;
 font-weight: 600;
-color: #800000;
+color: #a64c4c;
 padding-bottom: 0.7em;
 /* background: url(../images/line.png) no-repeat 0% 100%; */
 }
@@ -529,30 +531,26 @@ font-size:1em;
 margin:3em 0;
 }
 .gallery-head {
-margin:2em 0;
+margin:1em 0;
 text-align:center;
 }
 .gallery-head h3 {
   font-size: 2.7em;
   font-weight: 600;
-  color: #800000;
+  color: #a64c4c;
   padding-bottom: 0.7em;
   /*background: url(../images/line.png) no-repeat 50% 100%;*/
 }
 .gallery-top {
-margin:3em 0 4em 0;
+margin:0.5em 0 4em 0;
 }
 .gallery li {
 float: left;
 display: inline;
-width: 23.5%;
-margin-right: 2%;
-/*box-shadow: 0 0 18px #A6A6A6;
--webkit-box-shadow: 0 0 18px #A6A6A6;
--moz-box-shadow: 0 0 18px #A6A6A6;
--o-box-shadow: 0 0 18px #A6A6A6;*/
+width: 40.5%;
+margin-right: 9.5%;
 background: #FFF;
-padding-bottom: 10px;
+padding-bottom: 40px;
 opacity: .95;
 }
 .gallery li.last {
@@ -567,12 +565,14 @@ width: 100%;
 }
 .gallery h3 {
   color: #888;
-  padding: 10px 0 0 15px;
   background: #FFF;
   font-size: 1.2em;
   font-weight:500;
-  text-align:center;
+  text-align:left;
   text-transform:uppercase;
+  padding-bottom: 0.5em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 /*----*/
 .location{
@@ -586,7 +586,7 @@ text-align:center;
 .location-text h3{
 font-size: 2.7em;
 font-weight: 600;
-color:#800000;
+color:#a64c4c;
 padding-bottom: 0.5em;
 /*background: url(../images/line.png) no-repeat 50% 100%;*/
 }
@@ -605,9 +605,9 @@ display:inline-block;
 text-align:center;
 }
 .icon2{
-background: url(../images/icons1.png) no-repeat -96px -14px;
+background: url(../images/icons1.png) no-repeat -96px 10px;
 width: 28px;
-height: 35px;
+height: 56px;
 display:inline-block;
 text-align:center;
 }
@@ -629,7 +629,7 @@ color:#999999;
 font-weight:500;
 display:block;
 text-decoration:none;
-font-size:1.25em;
+font-size:1em;
 margin-bottom:1em
 }
 .location-grid a:hover{
@@ -772,15 +772,15 @@ color: #fff;
 	bottom: 0%;
 	right: 1%;
 	overflow: hidden;
-	width: 40px;
-	height: 40px;
+	width: 58px;
+	height: 53px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/easytop.png") no-repeat 0px 0px;
+	background: url("../images/easytop.png") no-repeat -6px -10px;
 }
 #toTopHover {
-	width: 40px;
-	height: 40px;
+	width: 64px;
+	height: 64px;
 	display: block;
 	overflow: hidden;
 	float: right;
@@ -854,7 +854,7 @@ left: 23%;
 width: 58%;
 }
 .banner {
-min-height:680px;
+min-height:500px;
 }
 
 .banner-form {
@@ -1136,11 +1136,11 @@ float: none;
 margin: 1em auto 0 auto;
 }
 .gallery-top {
-  margin: 3em 0 2em 0;
+margin: 3em 0 2em 0;
 }
 .gallery li {
-  width: 48%;
-    margin-bottom: 2em;
+width: 48%;
+margin-bottom: 2em;
 }
 .pricing-plans {
 width: 100%;
@@ -1215,7 +1215,7 @@ height: 357px;
 span.menu:before {
 	content: url(../images/nav.png);
 	cursor: pointer;	
-	height:32px;
+	height:1000px;
 }
 .top-menu {
 width: 11%;
@@ -1239,11 +1239,12 @@ display:block;
 margin:0;
 }
 .top-menu ul li a:hover{
-color:#313131;
+color:#800000;
 }
  span.menu{
 	display:block;
 	float:right;
+        padding-bottom: 100em;
 }
 .top-menu ul{
 	margin: 0;
@@ -1254,6 +1255,7 @@ color:#313131;
 	text-align: center;
 	top: 94%;
 	background:#fd7700;
+        
 }
 .logo{
 width:23%;

@@ -22,7 +22,7 @@
 		slideMargin: 0,
 		startSlide: 0,
 		randomStart: false,
-		captions: false,
+		captions: true,
 		ticker: false,
 		tickerHover: false,
 		adaptiveHeight: false,
@@ -65,11 +65,11 @@
 		autoControlsSelector: null,
 
 		// AUTO
-		auto: false,
+		auto: true,
 		pause: 4000,
 		autoStart: true,
 		autoDirection: 'next',
-		autoHover: false,
+		autoHover: true,
 		autoDelay: 0,
 		autoSlideForOnePage: false,
 
