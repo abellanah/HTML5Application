@@ -1,0 +1,375 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java Point Cafe Admin</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Simple Sidebar - Start Bootstrap Template-->
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+<link href="css/admin/bootstrap.min.css" rel="stylesheet">
+<!-- MetisMenu CSS -->
+<link href="css/admin/metisMenu.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/admin/sb-admin-2.css" rel="stylesheet"> 
+<!-- Custom Fonts -->
+<link href="css/admin/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Java Point Cafe" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+		});
+	});
+</script>
+ 
+<!---- start-smooth-scrolling---->
+<!--animated-css-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!--/animated-css-->
+
+</head>
+<body>
+<!-- Topbar -->	
+	<div class="row">
+		<div class="col-md-4 wow bounceIn">
+		<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+			<a href="index.html"><img src="images/logo.png" style="padding-top:20px;padding-left:40px;padding-bottom:25px" alt=""/></a>
+		</div>
+		</div>
+		<div class="col-md-8">
+		<div class="top-menu">
+			<ul class="nav nav-pills" style="padding-top:40px">
+				 <li><a class="active" href="index-ordermgt.html" style="color:black"><b>Order Management</b></a></li>
+				 <li class="active"><a class="active" href="#" style="color:black"><b>Site Management</b></a></li>
+				 <li><a class="active" href="index.html" style="color:black"><b>Navigate site</b></a></li>
+				 <li><a href="index-adminlogin.html" style="color:black"><b>Logout</b></a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+
+<!-- Navigation -->
+<div id="wrapper">
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper" class="navbar navbar-collapse" style="background-color:lightgray">	
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">Configure Logo</a>
+			</li>
+			<li class="sidebar-brand">
+				<a href="#">Configure Our Story</a>
+			</li>
+			<li class="sidebar-brand">
+				<a href="#"></a>
+				<a href="#">Configure Our Menu<span class="fa arrow"></span></a>
+				<ul class="nav nav-second-level">
+                    <li class='active has-sub'><a href='#'><span>Brunch</span></a>
+                        <ul class="nav nav-third-level">
+                            <li><a href='#'>Omelettes</a>
+                            <li><a href='#'>Waffles</a>
+                            <li><a href='#'>Pancakes</a>
+                            <li><a href='#'>Salads</a>
+                            <li><a href='#'>Sandwiches</a>
+                        </ul>      
+                    <li><a href='#'><span>Coffee</span></a></li>
+                    <li><a href='#'><span>Tea</span></a></li>
+                    <li><a href='#'><span>Drinks</span></a></li>
+                    <li class='last'><a href='#'><span>Pastries</span></a></li>				
+				</ul>
+			</li>
+			<li class="sidebar-brand">
+				<a href="#">Configure Location & Hours</a>
+				<!-- /.nav-second-level -->
+			</li>
+		</ul>
+	</div>
+	<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="page-content-wrapper">
+	
+	<!-- end Topbar -->	
+	<!-- Configure Logo -->	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Configure Logo</strong>
+			<div class="pull-right">
+				<button type="button" class="btn btn-default btn-xs">Save</button>
+			</div>
+		</div>
+		<div id="about" class="panel-body"> 
+		<div class="row">
+			<div class="col-md-2">
+				<div style="padding-left:30px;padding-bottom:15px"><strong>Change picture</strong></div>
+				<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+					<a href="index.html"><img src="images/logo.png" style="padding-left:30px;padding-bottom:30px" alt=""/></a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="input-group" style="padding-left:30px;padding-top:50px">
+				<input id="btn-input" type="text" class="form-control" style="width:335px;padding-right:10px" placeholder="D:\Pictures\image1.jpg" />	
+				<button class="btn btn-warning" style="padding-left:10px">
+					Browse
+				</button>	
+				<button class="btn btn-warning">
+					Upload
+				</button>
+				</div> 
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--end Configure Logo-->	
+	
+	<!--Configure Our Story-->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Configure Our Story</strong>
+			<div class="pull-right">
+				<button type="button" class="btn btn-default btn-xs">Save</button>
+			</div>
+		</div>
+	
+		<div id="about" class="panel-body"> 	 	
+		<div class="row">
+			<a style="padding-left:30px"><strong>Change picture</strong></a>
+			<div class="input-group" style="padding-left:30px">
+			<input id="btn-input" type="text" class="form-control" style="width:335px;padding-right:10px" placeholder="D:\Pictures\image1.jpg" />	
+			<button class="btn btn-warning" style="padding-left:10px">
+				Browse
+			</button>	
+			<button class="btn btn-warning">
+				Upload
+			</button>
+			</div>
+		</div>	
+		<div class="col-md-6">
+			<img src="images/java.jpg" alt=""/>
+		 </div>
+		 <div class="col-md-6 about-device-info wow fadeInRight" data-wow-delay="0.5s">
+			 <div class="device-text">					 
+				 <h3>OUR STORY</h3>
+				 <span></span>	
+				 <div class="form-group">
+					<textarea class="form-control" rows="10" placeholder=
+					"Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit."></textarea>
+				 </div>
+			 </div>
+			 <div class="about-list">
+				 <ul>
+					 <li><a href="#"><span class="abt1"></span></a>
+					 <textarea class="form-control" placeholder="Etiam aliquam velit eu facilisis porttitor."></textarea>
+					 </li>
+					 <li><a href="#"><span class="abt2"></span></a>
+					 <textarea class="form-control" placeholder="Aliquam mollis ligula ac erat luctus ornare"></textarea>
+					 </li>
+					 <li><a href="#"><span class="abt3"></span></a>
+					 <textarea class="form-control" placeholder="Quisque vel lorem eget orci volutpat mattis."></textarea>
+					 </li>
+					 <li><a href="#"><span class="abt3"></span></a>
+					 <textarea class="form-control" placeholder="Donec vel velit id arcu vulputate efficitur"></textarea>
+					 </li>
+				 </ul>
+			 </div>
+		 </div>		
+		
+		</div>
+	</div>
+	<!--end Configure Our Story-->
+	
+	<!--Configure Our Menu-->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Configure Our Menu</strong>
+			<div class="pull-right">
+				<button type="button" class="btn btn-default btn-xs">Save</button>
+			</div>
+		</div>
+		<div id="Gallery" class="panel-body">
+			<div class="gallery-head">
+				<h3>OUR MENU</h3>
+			</div>
+			<div class="gallery">
+			<ul>
+				<li class="wow bounceIn" data-wow-delay="0.5s">
+					<a href="#about"><img src="images/r11.jpg" alt=""/></a>
+					<h3>Indian Recipes</h3>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.5s">
+					<a href="images/r22.jpg"><img src="images/r22.jpg"/></a>
+					<h3>Mexican Roti</h3>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.5s">
+					<a href="images/r33.jpg"><img src="images/r33.jpg"/></a>
+					<h3>Japanese Rolls</h3>
+				</li>
+				<li class="last wow bounceIn" data-wow-delay="0.5s">
+					<a href="images/r44.jpg"><img src="images/r44.jpg"/></a>
+					<h3>Chicken Recipes</h3>
+				</li>				 
+				<li class="wow bounceIn" data-wow-delay="0.5s">
+					<a href="images/r55.jpg"><img src="images/r55.jpg"/></a>
+					<h3>Mix Salad</h3>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.5s">
+					<a href="images/r66.jpg"><img src="images/r66.jpg"/></a>
+					<h3>Vegiterian</h3>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.5s">
+					<a href="images/r77.jpg"><img src="images/r77.jpg"/></a>
+					<h3>Spicy Pizza</h3>
+				</li>
+				<li class="last wow bounceIn" data-wow-delay="0.5s">
+					<a class='gallery2' href="images/r11.jpg"><img src="images/r11.jpg"/></a>
+					<h3>Indian Recipes</h3>
+				</li>					
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		</div>
+	</div>
+ 
+	<!--Configure Location & Hours-->
+	<div class="panel panel-default">
+	<div class="panel-heading">
+		<strong>Configure Location & Hours</strong>
+		<div class="pull-right">
+			<button type="button" class="btn btn-default btn-xs">Save</button>
+		</div>
+	</div>
+	<div id="location" class="location panel-body">
+			 <div class="location-text">			
+				<h3>Location & Hours</h3>
+			 </div>
+			 <div class="location-grids">
+				 <div class="col-md-4"> 
+					 <img src="images/jpcimage.jpg" alt="image" style="width:320px;height:420px;border:5px solid white">	 
+				 </div>
+				 <div class="col-md-4 location-grid text-center">
+					<div>
+					 <p><b>OUR LOCATION:</b></p>
+					 <textarea class="form-control" placeholder="366 1st St, Benicia, CA 94510, United States"></textarea>
+					 <div class="icon2"></div>
+					 <p>Enter link to Google map:</p>
+					 <input id="btn-input" type="text" class="form-control" placeholder="https://www.google.com.ph/maps/place/Java+Point+Cafe/@38.046982,-122.160356,15z/data=!4m2!3m1!1s0x0:0x39b90bd488b76c29?sa=X&ei=1koZVZuKMoWg8QWi9IBo&ved=0CHQQ_BIwCw"/>
+					 </div>
+					 <div>
+					 <p><b>OPEN HOURS:</b></p>
+					 <input id="btn-input" type="text" class="form-control" placeholder="Monday - Sunday, 8:30 am – 5:00 pm"/>
+					 </div>
+					 <div>
+					 <div class="icon1"></div>
+					 <p><b>CONTACT US:</b></p>
+					 <input id="btn-input" type="text" class="form-control" placeholder="+1 707-745-1449"/>
+					 <p>Email:</p>
+					 <input id="btn-input" type="text" class="form-control" placeholder="admin@javapointcafe.com"/>
+					 </div>
+				 </div>
+				 <div class="col-md-4">
+				 <a>
+				   <img src="images/jpcmapimage.jpg" alt="map" style="width:320px;height:420px;border:0">
+				 </a>
+				 </div>
+				 <div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+	
+<!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+</div>
+
+<!-- jQuery script-->
+<script src="js/jquery.js"></script>
+<!--admin page JavaScript -->
+<script src="js/admin/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap.min-sb.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/sb-admin-2.js"></script>
+	
+<link rel="stylesheet" href="css/colorbox.css">
+<script src="js/jquery.colorbox-min.js"></script>
+<script>
+	jQuery(document).ready(function () {
+		jQuery('a.gallery2').colorbox({ opacity:0.5});
+	});
+</script>
+
+
+
+
+<!---->
+<div class="footer text-center">
+	 <div class="container">		
+		 <a class="wow bounceIn" data-wow-delay="0.5s" href="index.html"><img src="images/logo.png" alt=""/></a>		 
+		 <p class="wow bounceIn" data-wow-delay="0.4s">Copyright &copy; 2015 Spicy Cuisine All rights reserved | Design by  <a href="http://w3layouts.com">  W3layouts</a></p>
+		 <div class="social">			 
+			 <a href="#"><span class="behance"></span></a>
+			 <a href="#"><span class="dribble"></span></a>
+			 <a href="#"><span class="twitter"></span></a>
+			 <a href="#"><span class="facebook"></span></a>
+			 <a href="#"><span class="linkedin"></span></a>
+		 </div>
+	 </div>
+</div>
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+
+ </body>
+ </html>

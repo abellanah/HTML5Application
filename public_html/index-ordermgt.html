@@ -1,0 +1,296 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java Point Cafe Admin</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Simple Sidebar - Start Bootstrap Template-->
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+<link href="css/admin/bootstrap.min.css" rel="stylesheet">
+<!-- MetisMenu CSS -->
+<link href="css/admin/metisMenu.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/admin/sb-admin-2.css" rel="stylesheet"> 
+ 
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Java Point Cafe" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+		});
+	});
+</script>
+ 
+<!---- start-smooth-scrolling---->
+<!--animated-css-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!--/animated-css-->
+
+</head>
+<body>
+<!-- Topbar -->	
+	<div class="row">
+		<div class="col-md-4 wow bounceIn">
+		<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+			<a href="index.html"><img src="images/logo.png" style="padding-top:20px;padding-left:40px;padding-bottom:25px" alt=""/></a>
+		</div>
+		</div>
+		<div class="col-md-8">
+		<div class="top-menu">
+			<ul class="nav nav-pills" style="padding-top:40px">
+				 <li class="active"><a class="active" href="#" style="color:black"><b>Order Management</b></a></li>
+				 <li><a class="active" href="index-sitemgt.html" style="color:black"><b>Site Management</b></a></li>
+				 <li><a class="active" href="index.html" style="color:black"><b>Navigate site</b></a></li>
+				 <li><a class="active" href="index-adminlogin.html" style="color:black"><b>Logout</b></a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+
+<!-- Navigation -->
+<div id="wrapper">
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper" style="background-color:lightgray">	
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">New Orders</a>
+			</li>
+			<li class="sidebar-brand">
+				<a href="#">Processed Orders</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /#sidebar-wrapper -->
+
+<!-- Page Content -->
+<div id="page-content-wrapper">
+	<!-- New Orders -->	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>New Orders</strong>
+		</div>
+		<div class="panel-body"> 
+		<div>
+        <table id="t01">
+			<col width="600">
+			<col width="200">
+			<col width="100">
+			<col width="100">
+			<col width="100">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th colspan="2">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1 Description</td>
+                    <td><input type="text" style="width:40%" value="2"/></td>
+                    <td>29.99</td>
+                    <td>59.98</td>
+					<td><button class="editbtn"> <span style="color:blue">X  Remove</span>  </button></td>
+                </tr>
+                <tr>
+                    <td>Item 2 Description</td>
+                    <td><input type="text" style="width:40%" value="1"/></td>
+                    <td>19.99</td>
+                    <td>19.99</td>
+					<td><button class="editbtn"> <span style="color:blue">X  Remove</span>  </button></td>
+                </tr>
+                <tr>
+                    <td>Item 3 Description</td>
+                    <td><input type="text" style="width:40%" value="5"/></td>
+                    <td>40.00</td>
+                    <td>200.00</td>
+					<td><button class="editbtn"> <span style="color:blue">X  Remove</span>  </button></td>
+                </tr>
+                <tr>
+                    <td>Item 4 Description</td>
+                    <td><input type="text" style="width:40%" value="1"/></td>
+                    <td>29.99</td>
+                    <td>29.99</td>
+					<td><button class="editbtn"> <span style="color:blue">X  Remove</span>  </button></td>
+                </tr>
+                <tr>
+                    <td>Item 5 Description</td>
+                    <td><input type="text" style="width:40%; color:black" value="2"/></input></td>
+                    <td>75.00</td>
+                    <td>150.00</td>
+					<td><button class="editbtn"> <span style="color:blue">X  Remove</span>  </button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>TOTAL</b></td>
+                    <td colspan="2"><b>100.00</b></td>
+                </tr>
+            </tfoot>
+        </table>
+		</div>
+		</div>
+	</div>
+	<!--end New Orders-->	
+	
+	<!--Processed Orders-->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Processed Orders</strong>
+			<div class="pull-right">
+				<button type="button" class="btn btn-default btn-xs">Clear All</button>
+			</div>
+		</div>
+		<div id="about" class="panel-body"> 	 		 	
+		<div>
+        <table id="t02">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td>2</td>
+                    <td>29.99</td>
+                    <td>59.98</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>1</td>
+                    <td>19.99</td>
+                    <td>19.99</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>5</td>
+                    <td>40.00</td>
+                    <td>200.00</td>
+                </tr>
+                <tr>
+                    <td>Item 4</td>
+                    <td>1</td>
+                    <td>29.99</td>
+                    <td>29.99</td>
+                </tr>
+                <tr>
+                    <td>Item 5</td>
+                    <td>2</td>
+                    <td>75.00</td>
+                    <td>150.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>TOTAL</b></td>
+                    <td colspan="2"><b>100.00</b></td>
+                </tr>
+            </tfoot>
+        </table>
+		</div>
+		</div>
+	</div>
+	<!--end Processed Orders-->
+
+<!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+</div>
+
+<!-- jQuery script-->
+<script src="js/jquery.js"></script>
+<!--admin page JavaScript -->
+<script src="js/admin/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap.min-sb.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/sb-admin-2.js"></script>
+	
+<link rel="stylesheet" href="css/colorbox.css">
+<script src="js/jquery.colorbox-min.js"></script>
+<script>
+	jQuery(document).ready(function () {
+		jQuery('a.gallery2').colorbox({ opacity:0.5});
+	});
+</script>
+
+
+
+
+<!---->
+<div class="footer text-center">
+	 <div class="container">		
+		 <a class="wow bounceIn" data-wow-delay="0.5s" href="index.html"><img src="images/logo.png" alt=""/></a>		 
+		 <p class="wow bounceIn" data-wow-delay="0.4s">Copyright &copy; 2015 Spicy Cuisine All rights reserved | Design by  <a href="http://w3layouts.com">  W3layouts</a></p>
+		 <div class="social">			 
+			 <a href="#"><span class="behance"></span></a>
+			 <a href="#"><span class="dribble"></span></a>
+			 <a href="#"><span class="twitter"></span></a>
+			 <a href="#"><span class="facebook"></span></a>
+			 <a href="#"><span class="linkedin"></span></a>
+		 </div>
+	 </div>
+</div>
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+
+ </body>
+ </html>
