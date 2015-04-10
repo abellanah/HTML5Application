@@ -64,42 +64,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>
-<!-- Topbar -->	
-	<div class="row">
-		<div class="col-md-4 wow bounceIn">
-		<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
-			<a href="index.html"><img src="images/logo.png" style="padding-top:20px;padding-left:40px;padding-bottom:25px" alt=""/></a>
-		</div>
-		</div>
-		<div class="col-md-8">
-		<div class="top-menu">
-			<ul class="nav nav-pills" style="padding-top:40px">
-				 <li class="active"><a class="active" href="#" style="color:black"><b>Order Management</b></a></li>
-				 <li><a class="active" href="index-sitemgt.html" style="color:black"><b>Site Management</b></a></li>
-				 <li><a class="active" href="index.html" style="color:black"><b>Navigate site</b></a></li>
-				 <li><a class="active" href="index-adminlogin.html" style="color:black"><b>Logout</b></a></li>
-			</ul>
-		</div>
-		</div>
-	</div>
-
 <!-- Navigation -->
 <div id="wrapper">
 	<!-- Sidebar -->
-	<div id="sidebar-wrapper" style="background-color:lightgray">	
-		<ul class="sidebar-nav">
-			<li class="sidebar-brand">
-				<a href="#">New Orders</a>
-			</li>
-			<li class="sidebar-brand">
-				<a href="#">Processed Orders</a>
-			</li>
-		</ul>
+	<div id="sidebar-wrapper" class="navbar navbar-collapse">	
+			<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+				<a href="index.html"><img src="images/logo.png" style="padding-top:10px; padding-left:50px" alt=""/></a>
+			</div>
+            <link rel="stylesheet" href="css/style_menu.css">
+            <script src="js/script.js"></script>	
+            <div id='cssmenu' style="font-family:'Open Sans', sans-serif; padding-top:200px;padding-left:15px">
+                <ul>
+					<li><span></span></li>
+                    <li class="active" ><a class="scroll" href='#'><span>New Orders</span></a></li>
+					<li><a class="scroll" href='#'><span>Processed Orders</span></a></li>
+                </ul>
+            </div>
 	</div>
 	<!-- /#sidebar-wrapper -->
 
 <!-- Page Content -->
 <div id="page-content-wrapper">
+	<!-- Topbar -->
+	<div class="row">
+		<div class="top-menu">
+			<ul class="nav nav-pills" style="padding-top:40px">
+				 <li class="active"><a class="#" href="index-ordermgt.html" style="color:black"><b>Order Management</b></a></li>
+				 <li><a class="active" href="index-sitemgt.html" style="color:black"><b>Site Management</b></a></li>
+				 <li><a class="active" href="index.html" style="color:black"><b>Navigate site</b></a></li>
+				 <li><a href="index-adminlogin.html" style="color:black"><b>Logout</b></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end Topbar -->	
 	<!-- New Orders -->	
 	<div class="panel panel-default">
 		<div class="panel-heading">
