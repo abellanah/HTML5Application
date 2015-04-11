@@ -145,7 +145,7 @@ text-align:center;
 width:100%;
 }
 .banner-form{
-text-align:center;
+text-align:left;
  background:rgba(255, 255, 255, 0.27);
  padding:2em;
  float:right;
@@ -791,8 +791,9 @@ color: #fff;
 /*--customized--*/
 
 .megatron {
-	background: url("../images/bg.jpg") no-repeat 0px 0px;
-	background-color: black;
+	background:#2F3238;
+	color:#7F8289;
+	min-height:800px;
 	background-size:cover;
 	min-height:640px;
 }
