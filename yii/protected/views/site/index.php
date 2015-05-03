@@ -4,14 +4,14 @@
 $this->pageTitle = Yii::app()->name;
 ?>
 <div style="float:right;">
-    <a href="<?php echo Yii::app()->createUrl('site/index'); ?>" class="navbar-brand">Store Login</a> 
+    <a href="<?php echo Yii::app()->createUrl('management/login'); ?>" class="navbar-brand">Store Login</a> 
 </div>
 <!-- Home -->
 <div class="banner">
     <div class="container">
         <div class="header">
             <div class="logo wow fadeInLeft col-md-12 text-center" data-wow-delay="0.5s">
-                <a href="index.html"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" alt=""/></a>
+                <a href="index.html"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo/logo.png" alt=""/></a>
             </div>
             <div class="top-menu col-md-12 text-center" style="font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 800;">
                 <span class="menu"></span>
@@ -63,7 +63,7 @@ $this->pageTitle = Yii::app()->name;
     <div class="container">
         <div class="gallery-head">
             <div class="col-md-6 about-device wow fadeInLeft" data-wow-delay="0.5s">
-                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/java.jpg" alt=""/>
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo/java.png" width="480" height="650" alt=""/>
             </div>
             <div class="col-md-6 about-device-info wow fadeInRight" data-wow-delay="0.5s">
                 <div class="device-text">					 
