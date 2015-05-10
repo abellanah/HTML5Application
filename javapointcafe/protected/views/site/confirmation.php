@@ -26,9 +26,7 @@
                 <p><span style="font-size:larger; color:white">Please present this number to the Java Point Cafe staff to claim your order.</span></p>
                 <p><span style="font-size:larger; color:white">Thank you!</span></p>
                 <div class="padding4">
-                    <button type="button" class="btn btn-info btn-lg">
-                        <a href="index.html" style="color:white"><b>Back to Home</b></a>
-                    </button>
+                    <a href="index.html" style="color:white" class="btn btn-info btn-lg"><b>Back to Home</b></a>
                 </div>
             </div>
 
