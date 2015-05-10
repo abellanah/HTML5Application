@@ -26,7 +26,7 @@
                 <p><span style="font-size:larger; color:white">Please present this number to the Java Point Cafe staff to claim your order.</span></p>
                 <p><span style="font-size:larger; color:white">Thank you!</span></p>
                 <div class="padding4">
-                    <a href="index.html" style="color:white" class="btn btn-info btn-lg"><b>Back to Home</b></a>
+                    <a href="<?php echo Yii::app()->createUrl('site/index'); ?>" style="color:white" class="btn btn-info btn-lg"><b>Back to Home</b></a>
                 </div>
             </div>
 
