@@ -33,6 +33,19 @@
             </div>
         </div>
         <!-- end Topbar -->	
+        <div id="alertMsg">
+            <?php
+            if (isset(Yii::app()->session['alertMessage'])) {
+                ?>
+                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
+                </div>
+                <?php
+                unset(Yii::app()->session['alertMessage']);
+            }
+            ?>
+        </div>
         <!-- New Orders -->	
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -161,12 +174,12 @@
 <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/colorbox.css">
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.colorbox-min.js"></script>
 <script>
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         jQuery('a.gallery2').colorbox({opacity: 0.5});
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         /*
          var defaults = {
          containerID: 'toTop', // fading element id

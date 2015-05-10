@@ -32,6 +32,19 @@
             </div>
         </div>
         <!-- end Topbar -->	
+        <div id="alertMsg">
+            <?php
+            if (isset(Yii::app()->session['alertMessage'])) {
+                ?>
+                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
+                </div>
+                <?php
+                unset(Yii::app()->session['alertMessage']);
+            }
+            ?>
+        </div>
         <!-- New Orders -->	
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -60,6 +73,9 @@
                                 'buttons' => array(
                                     'view' => array(
                                         'url' => 'Yii::app()->createUrl("management/vieworder",array("id"=>$data->customer_id))',
+                                    ),
+                                    'delete' => array(
+                                        'url' => 'Yii::app()->createUrl("management/deleteorder",array("id"=>$data->customer_id))',
                                     ),
                                     'complete' => array(
                                         'label' => 'Complete Order',

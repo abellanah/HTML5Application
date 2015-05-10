@@ -23,7 +23,7 @@ class ManagementController extends Controller {
         }
         $this->render('login', array('model' => $model));
     }
-    
+
     /* THIS IS FOR ORDER */
 
     public function actionOrder() {
@@ -63,7 +63,18 @@ class ManagementController extends Controller {
         LoginForm::checkLogin();
         $customer = Customer::model()->findByPk($id);
         $customer->order_complete = 1;
-        $customer->save();
+        if ($customer->save()) {
+            Alert::createAlert('Order marked complete successfully.', 'success');
+        }
+        $this->redirect(array('management/order'));
+    }
+    public function actionDeleteorder($id) {
+        LoginForm::checkLogin();
+        $customer = Customer::model()->findByPk($id);
+        
+        if ($customer->delete()) {
+            Alert::createAlert('Order deleted.', 'success');
+        }
         $this->redirect(array('management/order'));
     }
 
@@ -91,7 +102,9 @@ class ManagementController extends Controller {
                 $total_amount += $order->order_quantity * $order->orderItem->item_price;
             }
             $customer->total_amount = $total_amount;
-            $customer->save();
+            if ($customer->save()) {
+                Alert::createAlert($order_item->orderItem->item_description . " is added to the order.", 'success');
+            }
         }
 
         $this->redirect(array('management/vieworder', 'id' => $customer_id));
@@ -112,6 +125,7 @@ class ManagementController extends Controller {
                 }
                 $customer->total_amount = $total_amount;
                 if ($customer->save()) {
+                    Alert::createAlert('Quantity updated.', 'success');
                     $this->redirect(array('management/vieworder', 'id' => $model->order_customer_id));
                 }
             }
@@ -135,7 +149,9 @@ class ManagementController extends Controller {
             $total_amount += $order->order_quantity * $order->orderItem->item_price;
         }
         $customer->total_amount = $total_amount;
-        $customer->save();
+        if($customer->save()){
+            Alert::createAlert('Item removed from the order.', 'success');
+        }
 
         $this->redirect(array('management/vieworder', 'id' => $id));
     }
@@ -144,6 +160,7 @@ class ManagementController extends Controller {
 
 
     /* THIS IS FOR PROCESSED */
+
     public function actionProcessed() {
         LoginForm::checkLogin();
 
@@ -206,6 +223,8 @@ class ManagementController extends Controller {
             if ($category->save()) {
                 $category = new Category();
                 Alert::createAlert('Category added successfully.', 'success');
+            } else {
+                Alert::createAlert($category->getError('category_name'), 'danger');
             }
         }
 
@@ -240,6 +259,8 @@ class ManagementController extends Controller {
             if ($model->save()) {
                 $model = new Subcategory;
                 Alert::createAlert('Subcategory added successfully.', 'success');
+            } else {
+                Alert::createAlert($model->getError('subcategory_name'), 'danger');
             }
         }
 
@@ -249,6 +270,8 @@ class ManagementController extends Controller {
             $category->attributes = $_POST['Category'];
             if ($category->save()) {
                 Alert::createAlert('Category updated successfully.', 'success');
+            } else {
+                Alert::createAlert($category->getError('category_name'), 'danger');
             }
         }
 

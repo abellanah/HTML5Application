@@ -1,15 +1,8 @@
-<?php /* @var $this Controller */ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="language" content="en">
-
-        <!-- blueprint CSS framework -->
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection">
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print">
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">-->
 
         <link rel="icon" type="image/png" sizes="32x32" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon-32x32.png">
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js" type="text/javascript"></script>
@@ -31,6 +24,8 @@
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/move-top.js" type="text/javascript"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/easing.js" type="text/javascript"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/wow.min.js" type="text/javascript"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootbox.min.js" type="text/javascript"></script>
         <script>
             new WOW().init();
         </script>
@@ -57,21 +52,7 @@
             }
         </style>
     </head>
-
     <body>    
-        <div id="alertMsg">
-            <?php
-            if (isset(Yii::app()->session['alertMessage'])) {
-                ?>
-                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
-                </div>
-                <?php
-                unset(Yii::app()->session['alertMessage']);
-            }
-            ?>
-        </div>
         <?php echo $content; ?>
     </body>
 </html>

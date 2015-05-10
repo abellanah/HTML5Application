@@ -51,7 +51,6 @@
             }
             ?>
         </div>
-
         <!--Configure Our Menu-->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -94,8 +93,9 @@
                         ?>
                         <div class="row">
                             <div class="col-lg-2">Subcategory Name:</div>
-                            <div class="col-lg-10"><?php echo $form->textField($model, 'subcategory_name', array('size' => 60, 'maxlength' => 255, 'class' => 'form-control')); ?>
-                                <?php echo $form->error($model, 'subcategory_name', array('class' => 'text-danger')); ?></div>
+                            <div class="col-lg-10">
+                                <?php echo $form->textField($model, 'subcategory_name', array('size' => 60, 'maxlength' => 255, 'class' => 'form-control')); ?>
+                            </div>
                         </div>
                         <br />
                         <div class="row">
@@ -150,12 +150,12 @@
 <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/colorbox.css">
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.colorbox-min.js"></script>
 <script>
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         jQuery('a.gallery2').colorbox({opacity: 0.5});
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         /*
          var defaults = {
          containerID: 'toTop', // fading element id

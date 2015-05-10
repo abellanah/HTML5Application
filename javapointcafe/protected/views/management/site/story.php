@@ -30,19 +30,6 @@
     ?>
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div id="alertMsg">
-            <?php
-            if (isset(Yii::app()->session['alertMessage'])) {
-                ?>
-                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
-                </div>
-                <?php
-                unset(Yii::app()->session['alertMessage']);
-            }
-            ?>
-        </div> 
         <!-- Topbar -->
         <div class="row">
             <div class="top-menu">
@@ -56,6 +43,19 @@
             </div>
         </div>
         <!-- end Topbar -->
+        <div id="alertMsg">
+            <?php
+            if (isset(Yii::app()->session['alertMessage'])) {
+                ?>
+                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
+                </div>
+                <?php
+                unset(Yii::app()->session['alertMessage']);
+            }
+            ?>
+        </div> 
         <?php if ($form->errorSummary($model)) { ?>
             <div class="alert alert-dismissable alert-danger" style="padding-left:30px;">
                 <button type="button" class="close" data-dismiss="alert">×</button>

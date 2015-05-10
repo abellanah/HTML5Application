@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `_javapointcafe` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `_javapointcafe`;
--- MySQL dump 10.13  Distrib 5.6.17, for Win32 (x86)
+-- MySQL dump 10.13  Distrib 5.6.23, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: _javapointcafe
 -- ------------------------------------------------------
--- Server version	5.5.36
+-- Server version	5.6.24
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -30,7 +28,7 @@ CREATE TABLE `category` (
   PRIMARY KEY (`category_id`),
   UNIQUE KEY `category_id_UNIQUE` (`category_id`),
   UNIQUE KEY `category_name_UNIQUE` (`category_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +37,7 @@ CREATE TABLE `category` (
 
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` VALUES (3,'Dinner'),(1,'Drinks'),(4,'Lunch'),(2,'Snacks'),(8,'test');
+INSERT INTO `category` VALUES (3,'Dinner'),(1,'Drinks'),(4,'Lunch'),(2,'Snacks');
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +62,7 @@ CREATE TABLE `customer` (
   `order_complete` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`customer_id`),
   UNIQUE KEY `customer_id_UNIQUE` (`customer_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,7 +71,6 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,'wilson sasam','wilson.sasam@gmail.com','03265988475','00:00:00','rwqrwqrrwrc cqw',0,294.5,'1231','0000-00-00 00:00:00',0),(2,'lovella tan','lovellamarietan@gmail.com','03265984115','00:00:00','ccwdwr  qdqwdewq  dwqed',1,50,'3123','0000-00-00 00:00:00',0);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -94,7 +91,7 @@ CREATE TABLE `item` (
   UNIQUE KEY `item_id_UNIQUE` (`item_id`),
   KEY `item_subcategory_id_idx` (`subcategory_id`),
   CONSTRAINT `item_subcategory_id` FOREIGN KEY (`subcategory_id`) REFERENCES `subcategory` (`subcategory_id`) ON DELETE SET NULL ON UPDATE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,7 +100,7 @@ CREATE TABLE `item` (
 
 LOCK TABLES `item` WRITE;
 /*!40000 ALTER TABLE `item` DISABLE KEYS */;
-INSERT INTO `item` VALUES (1,'Big Mac','default.png',10,5),(2,'Sisig','default.png',22.25,6),(3,'Espresso','default.png',5.5,1),(6,'boom clap','6.png',12,7),(9,'test2','default.png',12,7),(12,'test234','default.jpg',234,NULL),(13,'345','default.jpg',345,NULL),(14,'456','default.jpg',456,NULL),(15,'987','default.jpg',987,NULL),(16,'876','default.jpg',876,NULL),(17,'ttt','default.jpg',22,NULL),(18,'rr','default.jpg',32,NULL),(19,'Century Tuna','default.png',23,10),(20,'teat','default.png',123,18),(21,'noimage85','21.jpg',123,7);
+INSERT INTO `item` VALUES (1,'Big Mac','1.jpg',10,5),(2,'Sisig','2.jpg',22.25,6),(3,'Espresso','3.jpg',5.5,1),(6,'boom clap','6.png',12,7),(9,'test2','9.jpg',12,7),(19,'Century Tuna','19.png',23,10),(20,'teat','20.jpg',123,18),(21,'noimage85','21.jpg',123,7);
 /*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,7 +136,7 @@ CREATE TABLE `management` (
 
 LOCK TABLES `management` WRITE;
 /*!40000 ALTER TABLE `management` DISABLE KEYS */;
-INSERT INTO `management` VALUES (8,'','logo.jpg','Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. test mes1a1','Etiam aliquam velit eu facilisis porttitor.','Aliquam mollis ligula ac erat luctus ornare.','Quisque vel lorem eget orci volutpat mattis.','Donec vel velit id arcu vulputate efficitur.','366 1st St, Benicia, CA 94510, United States','https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3142.004478219286!2d-122.16035600000002!3d38.046982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80856e3183c760f9%3A0x39b90bd488b76c29!2sJava+Point+Cafe!5e0!3m2!1sen!2sph!4v1428740122779','Monday - Sunday, 8:30 am – 5:00 pm','+1 707-745-14491','admin@javapointcafe.com');
+INSERT INTO `management` VALUES (8,'','','Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.','Etiam aliquam velit eu facilisis porttitor.','Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. ','Nam nec tellus a odio tincidunt auctor a ornare odio. ','Donec vel velit id arcu vulputate efficitur.','366 1st St, Benicia, CA 94510, United States','https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3142.004478219286!2d-122.16035600000002!3d38.046982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80856e3183c760f9%3A0x39b90bd488b76c29!2sJava+Point+Cafe!5e0!3m2!1sen!2sph!4v1428740122779','Monday - Sunday, 8:30 am – 5:00 pm','+1 707-745-14491','admin@javapointcafe.com');
 /*!40000 ALTER TABLE `management` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -161,7 +158,7 @@ CREATE TABLE `order` (
   KEY `item_order_id_idx` (`order_item_id`),
   CONSTRAINT `customer_order_id` FOREIGN KEY (`order_customer_id`) REFERENCES `customer` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `item_order_id` FOREIGN KEY (`order_item_id`) REFERENCES `item` (`item_id`) ON DELETE SET NULL ON UPDATE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -170,7 +167,6 @@ CREATE TABLE `order` (
 
 LOCK TABLES `order` WRITE;
 /*!40000 ALTER TABLE `order` DISABLE KEYS */;
-INSERT INTO `order` VALUES (1,1,1,15),(2,1,2,6),(17,2,1,5),(18,1,3,2);
 /*!40000 ALTER TABLE `order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -189,7 +185,7 @@ CREATE TABLE `subcategory` (
   UNIQUE KEY `subcategory_id_UNIQUE` (`subcategory_id`),
   KEY `subcategory_category_id_idx` (`category_id`),
   CONSTRAINT `subcategory_category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`category_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,7 +228,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'admin123','31e2356f591f8ca34b19ae8c0e33dd71','Admin','Admin',1,NULL,NULL,NULL,NULL),(4,'Admin','b18cc9c663911ad97d0b2621b46d176b','AdminAdmin','Admin',1,NULL,NULL,NULL,NULL),(5,'Admin1234','31e2356f591f8ca34b19ae8c0e33dd71','Adminpassword','Admin',1,NULL,NULL,NULL,NULL);
+INSERT INTO `user` VALUES (1,'admin123','31e2356f591f8ca34b19ae8c0e33dd71','Admin','Admin',1,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -245,4 +241,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-05-08 22:00:55
+-- Dump completed on 2015-05-10 23:30:25

@@ -31,19 +31,6 @@
     ?>
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div id="alertMsg">
-            <?php
-            if (isset(Yii::app()->session['alertMessage'])) {
-                ?>
-                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
-                </div>
-                <?php
-                unset(Yii::app()->session['alertMessage']);
-            }
-            ?>
-        </div> 
         <!-- Topbar -->
         <div class="row">
             <div class="top-menu">
@@ -57,6 +44,19 @@
             </div>
         </div>
         <!-- end Topbar -->	
+        <div id="alertMsg">
+            <?php
+            if (isset(Yii::app()->session['alertMessage'])) {
+                ?>
+                <div class="alert alert-dismissable alert-<?php echo Yii::app()->session['alertMessage']['type']; ?>">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <?php echo Yii::app()->session['alertMessage']['message']; ?>
+                </div>
+                <?php
+                unset(Yii::app()->session['alertMessage']);
+            }
+            ?>
+        </div> 
         <?php if ($form->errorSummary($model)) { ?>
             <div class="alert alert-dismissable alert-danger" style="padding-left:30px;">
                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -131,12 +131,12 @@
 <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/colorbox.css">
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.colorbox-min.js"></script>
 <script>
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         jQuery('a.gallery2').colorbox({opacity: 0.5});
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         /*
          var defaults = {
          containerID: 'toTop', // fading element id

@@ -2,7 +2,7 @@
     <div class="row">
         <div class="wow bounceIn">
             <div class="logo wow fadeInLeft" data-wow-delay="0.5s">
-                <a href="index.html"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" style="padding-top:20px;padding-left:40px;padding-bottom:25px" alt=""/></a>
+                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" style="padding-top:20px;padding-left:40px;padding-bottom:25px" alt=""/>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
                             <?php echo $form->error($model, 'user_password', array('class' => 'text-danger')); ?>            </div>
                     </div>
                     <div class="col-lg-10 col-lg-offset-2">
-                        <?php echo CHtml::submitButton('Login', array('class' => 'btn btn-primary')); ?>
+                        <?php echo CHtml::submitButton('Login', array('class' => 'btn btn-warning')); ?>
                     </div>
                 </fieldset>
             </div>
